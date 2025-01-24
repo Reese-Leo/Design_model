@@ -15,6 +15,7 @@ public class JdkProxyFactory {
         InvocationHandler handler = new JdkProxyHandler(targetObj);
         // return dynamic_proxy_object
         return Proxy.newProxyInstance(classLoader, interfaces, handler);
+
     }
 }
 
